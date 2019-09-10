@@ -7,9 +7,6 @@ def stu_activities():
     for root, dirs, files in os.walk(folder_path): 
         for index in range(len(dirs)):
             if dirs[index].startswith("Stu_"):
-                print("Found!")
-                print(root +" and folder is " + dirs[index]) 
                 current_file_path = os.path.join(root,str(dirs[index]))
-                print(current_file_path)
                 shutil.copytree(current_file_path,str(dirs[index]))
 stu_activities()
