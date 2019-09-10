@@ -1,6 +1,5 @@
 import os
 import shutil
-cworkingdirectory = os.getcwd()
 
 def pdf_copy():   
     folder_path = os.path.join("Downloads")

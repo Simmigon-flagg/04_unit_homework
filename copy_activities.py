@@ -3,7 +3,6 @@ import os
 
 def stu_activities():
     folder_path = os.path.join("Downloads")
-    des = os.path.join("new")
     for root, dirs, files in os.walk(folder_path): 
         for index in range(len(dirs)):
             if dirs[index].startswith("Stu_"):

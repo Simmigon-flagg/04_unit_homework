@@ -1,6 +1,6 @@
 import os
 def main():
-    print()
+   
     if os.path.exists("CyberSecurity-Notes") == False:
         os.mkdir('CyberSecurity-Notes')
         print("Create New Folder")
@@ -12,13 +12,8 @@ def main():
             os.mkdir(file_path + "/" + week)
             for day_index in range(1,4):
                 day = "Day " + str(day_index)
-                print(day)
                 if os.path.exists(file_path + "/" + week + "/" + day) == False:
                     os.mkdir(file_path + "/" + week + "/" + day)
-
-        
-
-
 main()
 
     
